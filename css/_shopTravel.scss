@@ -1,0 +1,48 @@
+#shopTravelTop {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+
+    h2 {
+        font-size: 4rem;
+        margin: 3rem;
+    }
+
+    p {
+        line-height: 1.7rem;
+    }
+}
+
+#shopTravelIntroduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    div:nth-child(4){
+        margin-bottom: 20rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .shopTitle {
+        margin: 5rem 0 2rem;
+    }
+
+    .shop01 {
+        width: 800px;
+        height: 300px;
+        border: 3px solid black;
+
+        img {
+            width: 100%;
+        }
+    }
+}

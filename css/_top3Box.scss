@@ -1,0 +1,79 @@
+
+#topStart {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+#topRoom {
+    margin-bottom: 10rem;
+}
+
+#topFacility {
+    margin-bottom: 20rem;
+}
+
+
+.top3Box {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+
+    .top3Box01 {
+        display: flex;
+        justify-content: space-between;
+
+
+        @media (width <=900px) {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top3Text {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            max-width: 600px;
+
+            @media (width <=900px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            p {
+                margin: 0 0 5rem 0;
+
+                @media (width <=900px) {
+                    margin-top: 2rem;
+                    text-align: center;
+                }
+
+                span {
+                    font-size: 1.5rem;
+                }
+            }
+            
+            a {
+                border: 1px solid black;
+                padding: 0.5rem;
+                width: 14rem;
+                transition: 0.5s;
+                text-align: center;
+            }
+
+            a:hover {
+                font-size: 1.1rem;
+                transition: 0.5s;
+            }
+        }
+
+        .top3Image {
+
+            img {
+                width: 430px;
+                height: 470px;
+            }
+        }
+    }
+}

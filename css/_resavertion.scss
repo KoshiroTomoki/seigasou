@@ -1,0 +1,50 @@
+#topReservation{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    .subTitle{
+        margin: 3rem;
+    }
+
+    .topResevertion02{
+
+        h3{
+            font-size: 2rem;
+            margin-top: 5rem;
+        }
+
+        .resevertion02Text{
+            margin: 1rem 0 2rem;
+        }
+
+        .ResevertionList{
+            margin: 2rem auto;
+            width: 150px;
+            text-align: start;
+        }
+    }
+    .FAQ{
+        border: 3px solid rgb(127, 127, 127);
+        font-size: 3rem;
+        margin: 5rem;
+        padding: 2rem;
+        transition: 0.5s;
+
+        a{
+            transition: 0.5s;
+
+        }
+        a:hover{
+            color: rgb(127, 127, 127);
+            font-size: 3.5rem;
+            transition: 0.5s;
+        }
+    }
+}

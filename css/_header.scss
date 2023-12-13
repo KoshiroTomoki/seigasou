@@ -1,0 +1,48 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 2rem 0.5rem;
+    z-index: 1000;
+    background: rgba(255,255,255,0.5);
+
+    @media (width <=900px) {
+        display: none;
+    }
+
+    .headerNav {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0.5rem;
+        border-top: black 1px solid;
+        border-bottom: black 1px solid;
+
+        li {
+            writing-mode: vertical-rl;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+
+            a {
+                transition: 0.5s;
+            }
+
+            a:hover {
+                font-size: 1.3rem;
+                transition: 0.5s;
+            }
+        }
+
+        li:nth-child(1) {
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+        }
+
+        li:nth-child(8) {
+            text-orientation: upright;
+        }
+
+        .upright{
+            text-orientation: upright;
+        }
+    }
+}

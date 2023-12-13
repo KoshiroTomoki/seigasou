@@ -1,0 +1,69 @@
+#FAQTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    text-align: center;
+
+    h2 {
+        font-size: 4rem;
+        margin: 10rem 5rem 0rem;
+        height: 30vh;
+    }
+
+    .FAQ {
+
+        display: flex;
+        flex-direction: column;
+
+        .FAQText {
+            cursor: default;
+
+            .FAQ-Q {
+                border: 3px rgb(156, 156, 156) solid;
+                background: white;
+                padding: 0 10rem;
+                height: 3rem;
+                margin-bottom: 3rem;
+
+            }
+
+            .FAQ-A {
+                background: white;
+                margin-bottom: 5rem;
+                margin-top: -2.5rem;
+                display: none;
+                max-width: 800px;
+                width: 100%;
+
+                a {
+                    transition: 0.5s;
+                }
+
+                a:hover {
+                    color: red;
+                    transition: 0.5s;
+                }
+            }
+
+            .displayBlock {
+                display: block
+            }
+        }
+    }
+
+    .FAQText01{
+        margin: 5rem;
+
+        .tel{
+            font-size: 3rem;
+            margin: 2rem;
+        }
+
+        p:nth-child(3){
+            font-size: 1.5rem;
+        }
+    }
+}

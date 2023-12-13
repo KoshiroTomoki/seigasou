@@ -1,0 +1,1108 @@
+@charset "UTF-8";
+/*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type=checkbox] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+       appearance: checkbox;
+}
+
+[type=radio] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+       appearance: radio;
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit; /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+:root {
+  --drawerColor:#393f4c; /* ドロワーボタンとMENUの色。藍鉄色 */
+  --barColor:#eaf4fc; /* ドロワーボタンのアニメーションするバーの色。月白色 */
+  --menuColor:linear-gradient( 109.6deg, rgb(255, 255, 255) 11.2%, rgb(255, 255, 255) 100.2% ); /* メニューの背景色。グラデーションなのでbackground-imageで指定 */
+}
+
+.toggleButton {
+  display: none;
+  z-index: 1000;
+}
+
+#drawerMenu {
+  display: none;
+  z-index: 1;
+}
+
+#drawerMenu ul {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#drawerMenu li {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+#drawerMenu a {
+  display: block;
+  padding: 1rem; /* マウスが反応する範囲を少し広げている*/
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+/* アンカーリンクにマウスが乗ると、他のアンカーリンクが少し薄くなる指定 */
+#drawerMenu ul:has(a:hover) a:not(:hover) {
+  opacity: 0.3;
+}
+
+@media (width <= 900px) { /* メディアクエリの値はお好みで */
+  .toggleButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: block; /* display:none;を解除するために入れている */
+    background: var(--drawerColor);
+    border-radius: 5px;
+    z-index: 100;
+  }
+  .toggleButton::after {
+    content: "MENU";
+    position: absolute;
+    bottom: -1rem;
+    font-size: 0.725rem;
+    font-weight: bold;
+    color: var(--drawerColor);
+  }
+  .toggleButton span {
+    width: 60%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    left: 20%;
+    background-color: var(--barColor);
+    border-radius: 5px;
+    transition: all 0.2s linear;
+  }
+  .toggleButton span:nth-of-type(1) {
+    top: 10px;
+    transform: rotate(0);
+  }
+  .toggleButton span:nth-of-type(2) {
+    top: 18px;
+    transform: scale(1);
+  }
+  .toggleButton span:nth-of-type(3) {
+    bottom: 10px;
+    transform: rotate(0);
+  }
+  .close span:nth-of-type(1) {
+    top: 18px;
+    transform: rotate(-45deg);
+  }
+  .close span:nth-of-type(2) {
+    transform: scale(0);
+  }
+  .close span:nth-of-type(3) {
+    bottom: 18px;
+    transform: rotate(45deg);
+  }
+  #drawerMenu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -240px;
+    transition: all 0.3s linear;
+  }
+  #drawerMenu.open {
+    right: 0;
+  }
+  #drawerMenu {
+    border: #cecece 1px solid;
+  }
+  #drawerMenu ul {
+    display: block;
+    width: 200px;
+    height: 100%;
+    padding: 80px 20px 20px 20px;
+    background-image: var(--menuColor);
+    overflow: hidden;
+    text-align: center;
+    list-style-type: none;
+    border-radius: 0 0 0 10px;
+  }
+  #drawerMenu li {
+    width: 100%;
+  }
+} /* width <= 800px */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 2rem 0.5rem;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.5);
+}
+@media (width <= 900px) {
+  header {
+    display: none;
+  }
+}
+header .headerNav {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem;
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
+}
+header .headerNav li {
+  writing-mode: vertical-rl;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+header .headerNav li a {
+  transition: 0.5s;
+}
+header .headerNav li a:hover {
+  font-size: 1.3rem;
+  transition: 0.5s;
+}
+header .headerNav li:nth-child(1) {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+header .headerNav li:nth-child(8) {
+  text-orientation: upright;
+}
+header .headerNav .upright {
+  text-orientation: upright;
+}
+
+#topTop {
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+#topTop .heroImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+@media (width <= 900px) {
+  #topTop .heroImage {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+}
+#topTop .heroImage img {
+  max-width: 1100px;
+  width: 100%;
+}
+@media (width <= 900px) {
+  #topTop .heroImage img {
+    width: auto;
+  }
+}
+#topTop .topLogo {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#topTop .topLogo img {
+  max-width: 350px;
+  width: 100%;
+}
+@media (width <= 900px) {
+  #topTop .topLogo img {
+    width: auto;
+  }
+}
+
+#topStart {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+#topRoom {
+  margin-bottom: 10rem;
+}
+
+#topFacility {
+  margin-bottom: 20rem;
+}
+
+.top3Box {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+.top3Box .top3Box01 {
+  display: flex;
+  justify-content: space-between;
+}
+@media (width <= 900px) {
+  .top3Box .top3Box01 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.top3Box .top3Box01 .top3Text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 600px;
+}
+@media (width <= 900px) {
+  .top3Box .top3Box01 .top3Text {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.top3Box .top3Box01 .top3Text p {
+  margin: 0 0 5rem 0;
+}
+@media (width <= 900px) {
+  .top3Box .top3Box01 .top3Text p {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+.top3Box .top3Box01 .top3Text p span {
+  font-size: 1.5rem;
+}
+.top3Box .top3Box01 .top3Text a {
+  border: 1px solid black;
+  padding: 0.5rem;
+  width: 14rem;
+  transition: 0.5s;
+  text-align: center;
+}
+.top3Box .top3Box01 .top3Text a:hover {
+  font-size: 1.1rem;
+  transition: 0.5s;
+}
+.top3Box .top3Box01 .top3Image img {
+  width: 430px;
+  height: 470px;
+}
+
+.topShop {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+  position: relative;
+}
+.topShop .topShopTextBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+.topShop .topShopTextBox .subTitle {
+  margin-bottom: 3rem;
+}
+.topShop .topShopTextBox .shopText {
+  text-align: center;
+  max-width: 550px;
+}
+.topShop .topShopTextBox .topLink {
+  margin: 3rem 2rem 2rem;
+}
+.topShop .topShopTextBox .topLink a {
+  border: 1px solid black;
+  padding: 0.5rem;
+  width: 14rem;
+  transition: 0.5s;
+  text-align: center;
+}
+.topShop .topShopTextBox .topLink a:hover {
+  font-size: 1.1rem;
+  transition: 0.5s;
+}
+.topShop .shopImage01 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: solid 3px rgb(0, 0, 0);
+  max-width: 500px;
+  width: 100%;
+  height: 200px;
+}
+.topShop .shopImage02 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: solid 3px rgb(0, 0, 0);
+  max-width: 500px;
+  width: 100%;
+  height: 200px;
+}
+
+#topTravel {
+  margin: 20rem 0;
+}
+#topTravel .subTitle {
+  margin: 10rem 0 5rem;
+  text-align: center;
+}
+#topTravel .topTravelBox {
+  display: flex;
+  justify-content: space-between;
+}
+@media (width <= 900px) {
+  #topTravel .topTravelBox {
+    flex-direction: column;
+  }
+}
+#topTravel .topTravelBox .topTravelBox01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  max-width: 550px;
+  width: 100%;
+  height: 600px;
+  margin-top: 5rem;
+  margin: 0 auto;
+}
+@media (width <= 900px) {
+  #topTravel .topTravelBox .topTravelBox01 {
+    flex-direction: column;
+  }
+}
+#topTravel .topTravelBox .topTravelBox01 .topTravelBoxTitle {
+  font-size: 1.2rem;
+}
+#topTravel .topTravelBox .topTravelBox01 p {
+  margin: 2rem 0 0;
+}
+#topTravel .topTravelBox .topTravelBox01 .travelImage01 {
+  border: 3px solid rgb(0, 0, 0);
+  max-width: 470px;
+  width: 100%;
+  height: 350px;
+}
+#topTravel .topTravelBox .topTravelBox02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  max-width: 550px;
+  width: 100%;
+  height: 600px;
+  margin-left: 5rem;
+}
+@media (width <= 900px) {
+  #topTravel .topTravelBox .topTravelBox02 {
+    margin: 5rem auto 0;
+  }
+}
+#topTravel .topTravelBox .topTravelBox02 .topTravelBoxTitle {
+  font-size: 1.2rem;
+}
+#topTravel .topTravelBox .topTravelBox02 p {
+  margin: 2rem 0 0;
+}
+#topTravel .topTravelBox .topTravelBox02 .travelImage02 {
+  border: 3px solid rgb(0, 0, 0);
+  max-width: 470px;
+  width: 100%;
+  height: 350px;
+}
+
+#topAccess {
+  height: 100vh;
+  margin: 10rem 0;
+}
+#topAccess h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+#topAccess iframe {
+  max-width: 1280px;
+  width: 100%;
+  height: 400px;
+}
+#topAccess .topAccessText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+#topAccess .topAccessText .topAccessText01 {
+  margin: 2rem;
+}
+#topAccess .topAccessText .topAccessText01 .topAccessTexth3 {
+  font-size: 2rem;
+  margin: 2rem;
+}
+#topAccess .topAccessText .topAccessText02 {
+  margin: 2rem;
+}
+#topAccess .topAccessText .topAccessText02 .topAccessTexth3 {
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+#topReservation {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#topReservation .subTitle {
+  margin: 3rem;
+}
+#topReservation .topResevertion02 h3 {
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+#topReservation .topResevertion02 .resevertion02Text {
+  margin: 1rem 0 2rem;
+}
+#topReservation .topResevertion02 .ResevertionList {
+  margin: 2rem auto;
+  width: 150px;
+  text-align: start;
+}
+#topReservation .FAQ {
+  border: 3px solid rgb(127, 127, 127);
+  font-size: 3rem;
+  margin: 5rem;
+  padding: 2rem;
+  transition: 0.5s;
+}
+#topReservation .FAQ a {
+  transition: 0.5s;
+}
+#topReservation .FAQ a:hover {
+  color: rgb(127, 127, 127);
+  font-size: 3.5rem;
+  transition: 0.5s;
+}
+
+footer {
+  background: white;
+  height: 50vh;
+  position: relative;
+}
+footer .footerAdress {
+  position: absolute;
+  top: 10%;
+  left: 1%;
+}
+@media (width <= 900px) {
+  footer .footerAdress {
+    position: relative;
+  }
+}
+footer .footerAdress p {
+  padding-top: 1rem;
+}
+@media (width <= 900px) {
+  footer .footerAdress p {
+    text-align: center;
+  }
+}
+footer .footerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+footer .footerLogo img {
+  max-width: 300px;
+  width: 100%;
+  height: 235px;
+}
+footer .copy {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+#roomTop {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#roomTop h2 {
+  font-size: 4rem;
+  margin: 3rem;
+}
+#roomTop p {
+  line-height: 1.7rem;
+}
+
+#roomIntroduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#roomIntroduction h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+}
+#roomIntroduction .roomIntroductionImage img {
+  max-width: 800px;
+  width: 100%;
+  max-height: 600px;
+  height: 100%;
+}
+#roomIntroduction .roomIntroductionText {
+  margin-bottom: 3rem;
+}
+
+#facilityTop {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#facilityTop h2 {
+  font-size: 4rem;
+  margin: 3rem;
+}
+#facilityTop p {
+  line-height: 1.7rem;
+}
+
+#facilityIntroduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#facilityIntroduction h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+}
+#facilityIntroduction .facilityIntroductionImage img {
+  max-width: 800px;
+  width: 100%;
+  max-height: 600px;
+  height: 100%;
+}
+#facilityIntroduction .facilityIntroductionText {
+  margin-bottom: 3rem;
+}
+
+#shopTravelTop {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#shopTravelTop h2 {
+  font-size: 4rem;
+  margin: 3rem;
+}
+#shopTravelTop p {
+  line-height: 1.7rem;
+}
+
+#shopTravelIntroduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#shopTravelIntroduction div:nth-child(4) {
+  margin-bottom: 20rem;
+}
+#shopTravelIntroduction p {
+  text-align: center;
+}
+#shopTravelIntroduction .shopTitle {
+  margin: 5rem 0 2rem;
+}
+#shopTravelIntroduction .shop01 {
+  width: 800px;
+  height: 300px;
+  border: 3px solid black;
+}
+#shopTravelIntroduction .shop01 img {
+  width: 100%;
+}
+
+#FAQTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#FAQTop h2 {
+  font-size: 4rem;
+  margin: 10rem 5rem 0rem;
+  height: 30vh;
+}
+#FAQTop .FAQ {
+  display: flex;
+  flex-direction: column;
+}
+#FAQTop .FAQ .FAQText {
+  cursor: default;
+}
+#FAQTop .FAQ .FAQText .FAQ-Q {
+  border: 3px rgb(156, 156, 156) solid;
+  background: white;
+  padding: 0 10rem;
+  height: 3rem;
+  margin-bottom: 3rem;
+}
+#FAQTop .FAQ .FAQText .FAQ-A {
+  background: white;
+  margin-bottom: 5rem;
+  margin-top: -2.5rem;
+  display: none;
+  max-width: 800px;
+  width: 100%;
+}
+#FAQTop .FAQ .FAQText .FAQ-A a {
+  transition: 0.5s;
+}
+#FAQTop .FAQ .FAQText .FAQ-A a:hover {
+  color: red;
+  transition: 0.5s;
+}
+#FAQTop .FAQ .FAQText .displayBlock {
+  display: block;
+}
+#FAQTop .FAQText01 {
+  margin: 5rem;
+}
+#FAQTop .FAQText01 .tel {
+  font-size: 3rem;
+  margin: 2rem;
+}
+#FAQTop .FAQText01 p:nth-child(3) {
+  font-size: 1.5rem;
+}
+
+html {
+  font-family: "Shippori Mincho B1", serif;
+}
+html body {
+  background: url(../images/background.png);
+  margin-right: 3rem;
+  position: relative;
+}
+@media (width <= 900px) {
+  html body {
+    margin-right: 0;
+    margin: 0 0.5rem;
+  }
+}
+html body main {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+html body main .subTitle {
+  font-size: 3rem;
+}
+@media (width <= 900px) {
+  html body main .subTitle {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
