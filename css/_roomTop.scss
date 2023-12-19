@@ -11,10 +11,15 @@
     h2 {
         font-size: 4rem;
         margin: 3rem;
+
+        @media (width <=900px) {
+            font-size: 3rem;
+        }
     }
 
     p{
         line-height: 1.7rem;
+        margin: 0 1rem;
     }
 }
 

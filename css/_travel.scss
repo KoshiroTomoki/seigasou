@@ -1,5 +1,4 @@
 #topTravel {
-    margin: 20rem 0;
 
     .subTitle {
         margin: 10rem 0 5rem;
@@ -9,6 +8,7 @@
     .topTravelBox {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 5rem;
 
         @media (width <=900px) {
             flex-direction: column;
@@ -23,7 +23,6 @@
             max-width: 550px;
             width: 100%;
             height: 600px;
-            margin-top: 5rem;
             margin: 0 auto;
 
             @media (width <=900px) {
@@ -44,7 +43,15 @@
                 width: 100%;
                 height: 350px
             }
+
+            .imagep {
+                font-size: 2rem;
+                display: flex;
+                justify-content: center;
+                color: red;
+            }
         }
+
 
         .topTravelBox02 {
             display: flex;
@@ -75,6 +82,17 @@
                 width: 100%;
                 height: 350px
             }
+
+            .imagep {
+                font-size: 2rem;
+                display: flex;
+                justify-content: center;
+                color: red;
+            }
+        }
+
+        .topTravelText01 {
+            margin: 3rem 0;
         }
     }
 }

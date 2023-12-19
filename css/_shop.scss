@@ -48,6 +48,13 @@
         max-width: 500px;
         width: 100%;
         height: 200px;
+
+        p{
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            color: red;
+        }
     }
 
     .shopImage02 {
@@ -58,6 +65,12 @@
         max-width: 500px;
         width: 100%;
         height: 200px;
-
+        
+        p{
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            color: red;
+        }
     }
 }

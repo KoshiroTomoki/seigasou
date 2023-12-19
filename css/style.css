@@ -657,9 +657,22 @@ header .headerNav .upright {
   font-size: 1.1rem;
   transition: 0.5s;
 }
+@media (width <= 500px) {
+  .top3Box .top3Box01 .top3Image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .top3Box .top3Box01 .top3Image img {
   width: 430px;
   height: 470px;
+}
+@media (width <= 500px) {
+  .top3Box .top3Box01 .top3Image img {
+    width: 250px;
+    height: 300px;
+  }
 }
 
 .topShop {
@@ -706,6 +719,12 @@ header .headerNav .upright {
   width: 100%;
   height: 200px;
 }
+.topShop .shopImage01 p {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  color: red;
+}
 .topShop .shopImage02 {
   position: absolute;
   bottom: 0;
@@ -715,10 +734,13 @@ header .headerNav .upright {
   width: 100%;
   height: 200px;
 }
-
-#topTravel {
-  margin: 20rem 0;
+.topShop .shopImage02 p {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  color: red;
 }
+
 #topTravel .subTitle {
   margin: 10rem 0 5rem;
   text-align: center;
@@ -726,6 +748,7 @@ header .headerNav .upright {
 #topTravel .topTravelBox {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5rem;
 }
 @media (width <= 900px) {
   #topTravel .topTravelBox {
@@ -741,7 +764,6 @@ header .headerNav .upright {
   max-width: 550px;
   width: 100%;
   height: 600px;
-  margin-top: 5rem;
   margin: 0 auto;
 }
 @media (width <= 900px) {
@@ -760,6 +782,12 @@ header .headerNav .upright {
   max-width: 470px;
   width: 100%;
   height: 350px;
+}
+#topTravel .topTravelBox .topTravelBox01 .imagep {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  color: red;
 }
 #topTravel .topTravelBox .topTravelBox02 {
   display: flex;
@@ -789,9 +817,17 @@ header .headerNav .upright {
   width: 100%;
   height: 350px;
 }
+#topTravel .topTravelBox .topTravelBox02 .imagep {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+#topTravel .topTravelBox .topTravelText01 {
+  margin: 3rem 0;
+}
 
 #topAccess {
-  height: 100vh;
   margin: 10rem 0;
 }
 #topAccess h2 {
@@ -829,8 +865,6 @@ header .headerNav .upright {
 }
 
 #topReservation {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
   background: white;
   display: flex;
   justify-content: center;
@@ -860,6 +894,13 @@ header .headerNav .upright {
   padding: 2rem;
   transition: 0.5s;
 }
+@media (width <= 768px) {
+  #topReservation .FAQ {
+    font-size: 1.5rem;
+    margin: 2rem;
+    padding: 1rem;
+  }
+}
 #topReservation .FAQ a {
   transition: 0.5s;
 }
@@ -868,10 +909,14 @@ header .headerNav .upright {
   font-size: 3.5rem;
   transition: 0.5s;
 }
+@media (width <= 768px) {
+  #topReservation .FAQ a:hover {
+    font-size: 1.8rem;
+  }
+}
 
 footer {
   background: white;
-  height: 50vh;
   position: relative;
 }
 footer .footerAdress {
@@ -920,8 +965,14 @@ footer .copy {
   font-size: 4rem;
   margin: 3rem;
 }
+@media (width <= 900px) {
+  #roomTop h2 {
+    font-size: 3rem;
+  }
+}
 #roomTop p {
   line-height: 1.7rem;
+  margin: 0 1rem;
 }
 
 #roomIntroduction {
@@ -1017,6 +1068,8 @@ footer .copy {
   width: 800px;
   height: 300px;
   border: 3px solid black;
+  font-size: 3rem;
+  color: red;
 }
 #shopTravelIntroduction .shop01 img {
   width: 100%;

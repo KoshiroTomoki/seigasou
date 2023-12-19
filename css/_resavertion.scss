@@ -1,6 +1,4 @@
 #topReservation{
-    margin-top: 10rem;
-    margin-bottom: 10rem;
     background: white;
 
     display: flex;
@@ -37,6 +35,12 @@
         padding: 2rem;
         transition: 0.5s;
 
+        @media (width <=768px) {
+            font-size: 1.5rem;
+            margin: 2rem;
+            padding: 1rem;
+        }
+
         a{
             transition: 0.5s;
 
@@ -45,6 +49,10 @@
             color: rgb(127, 127, 127);
             font-size: 3.5rem;
             transition: 0.5s;
+
+            @media (width <=768px) {
+                font-size: 1.8rem;
         }
     }
+}
 }
