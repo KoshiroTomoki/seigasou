@@ -50,6 +50,14 @@
         font-size: 3rem;
         color: red;
 
+        @media (width <=900px) {
+            width: 400px;
+        }
+
+        @media (width <=500px) {
+            width: 300px;
+        }
+
         img {
             width: 100%;
         }

@@ -1081,6 +1081,16 @@ footer .copy {
   font-size: 3rem;
   color: red;
 }
+@media (width <= 900px) {
+  #shopTravelIntroduction .shop01 {
+    width: 400px;
+  }
+}
+@media (width <= 500px) {
+  #shopTravelIntroduction .shop01 {
+    width: 300px;
+  }
+}
 #shopTravelIntroduction .shop01 img {
   width: 100%;
 }
