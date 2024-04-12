@@ -1,0 +1,141 @@
+
+:root{
+    --drawerColor:#393f4c;/* ドロワーボタンとMENUの色。藍鉄色 */
+    --barColor:#eaf4fc;/* ドロワーボタンのアニメーションするバーの色。月白色 */
+    --menuColor:linear-gradient( 109.6deg,  rgb(255, 255, 255) 11.2%, rgb(255, 255, 255) 100.2% );/* メニューの背景色。グラデーションなのでbackground-imageで指定 */
+}
+
+.toggleButton {
+    display: none;
+    z-index: 1000;
+}
+
+#drawerMenu{
+    display: none;
+    z-index: 1;
+}
+
+#drawerMenu ul {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#drawerMenu li {
+    width: fit-content;
+    text-align: center;
+}
+
+#drawerMenu a {
+    display: block;
+    padding: 1rem;/* マウスが反応する範囲を少し広げている*/
+    opacity: 1;
+    transition: all .4s ease-in-out;
+}
+
+/* アンカーリンクにマウスが乗ると、他のアンカーリンクが少し薄くなる指定 */
+#drawerMenu ul:has(a:hover) a:not(:hover){
+    opacity: 0.3;
+}
+
+
+@media (width <=900px) {  /* メディアクエリの値はお好みで */
+
+    .toggleButton {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        display: block;/* display:none;を解除するために入れている */
+        background: var(--drawerColor);
+        border-radius: 5px;
+        z-index: 100;
+    }
+
+
+    .toggleButton::after {
+        content: "MENU";
+        position: absolute;
+        bottom: -1rem;
+        font-size: 0.725rem;
+        font-weight: bold;
+        color:var(--drawerColor);
+    }
+
+    .toggleButton span {
+        width: 60%;
+        height: 4px;
+        display: block;
+        position: absolute;
+        left: 20%;
+        background-color: var(--barColor);
+        border-radius: 5px;
+        transition: all 0.2s linear;
+    }
+
+    .toggleButton span:nth-of-type(1) {
+        top: 10px;
+        transform: rotate(0);
+    }
+
+    .toggleButton span:nth-of-type(2) {
+        top: 18px;
+        transform: scale(1);
+    }
+
+    .toggleButton span:nth-of-type(3) {
+        bottom: 10px;
+        transform: rotate(0);
+    }
+
+    .close span:nth-of-type(1) {
+        top: 18px;
+        transform: rotate(-45deg);
+    }
+
+    .close span:nth-of-type(2) {
+        transform: scale(0);
+    }
+
+    .close span:nth-of-type(3) {
+        bottom: 18px;
+        transform: rotate(45deg);
+    }
+
+    #drawerMenu {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -240px;
+        transition: all 0.3s linear;
+    }
+
+    #drawerMenu.open {
+        right: 0;
+    }
+
+
+    #drawerMenu{
+        border: #cecece 1px solid;
+    }
+
+    #drawerMenu ul {
+        display: block;
+        width: 200px;
+        height: 100%;
+        padding: 80px 20px 20px 20px;
+        background-image: var(--menuColor);
+        overflow: hidden;
+        text-align: center;
+        list-style-type: none;
+        border-radius: 0 0 0 10px;
+    }
+
+    #drawerMenu li {
+        width: 100%;
+    }
+
+}/* width <= 800px */

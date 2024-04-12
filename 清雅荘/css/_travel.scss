@@ -1,0 +1,98 @@
+#topTravel {
+
+    .subTitle {
+        margin: 10rem 0 5rem;
+        text-align: center;
+    }
+
+    .topTravelBox {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+
+        @media (width <=900px) {
+            flex-direction: column;
+        }
+
+        .topTravelBox01 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            max-width: 550px;
+            width: 100%;
+            height: 600px;
+            margin: 0 auto;
+
+            @media (width <=900px) {
+                flex-direction: column;
+            }
+
+            .topTravelBoxTitle {
+                font-size: 1.2rem;
+            }
+
+            p {
+                margin: 2rem 0 0;
+            }
+
+            .travelImage01 {
+                border: 3px solid rgb(0, 0, 0);
+                max-width: 470px;
+                width: 100%;
+                height: 280px;
+            }
+
+            .imagep {
+                font-size: 2rem;
+                display: flex;
+                justify-content: center;
+                color: red;
+            }
+        }
+
+
+        .topTravelBox02 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            max-width: 550px;
+            width: 100%;
+            height: 600px;
+            margin-left: 5rem;
+
+            @media (width <=900px) {
+                margin: 5rem auto 0;
+            }
+
+            .topTravelBoxTitle {
+                font-size: 1.2rem;
+            }
+
+            p {
+                margin: 2rem 0 0;
+            }
+
+            .travelImage02 {
+                border: 3px solid rgb(0, 0, 0);
+                max-width: 470px;
+                width: 100%;
+                height: 280px;
+            }
+
+            .imagep {
+                font-size: 2rem;
+                display: flex;
+                justify-content: center;
+                color: red;
+            }
+        }
+
+        .topTravelText01 {
+            margin: 3rem 0;
+        }
+    }
+}

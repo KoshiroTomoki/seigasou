@@ -1,0 +1,50 @@
+@charset "urf-8";
+
+@use "destyle";
+@use "drawer";
+@use "header";
+@use "top";
+@use "top3Box";
+@use "shop";
+@use "travel";
+@use "access";
+@use "resavertion";
+@use "footer";
+
+@use "roomTop";
+@use "facility.scss";
+@use "shopTravel";
+@use "FAQ";
+
+html {
+    font-family: 'Shippori Mincho B1', serif;
+
+    body {
+        background: url(../images/background.png);
+        margin-right: 3rem;
+        margin-left: 3rem;
+        position: relative;
+
+        @media (width <=900px) {
+            margin-right: 0;
+            margin: 0 0.5rem;
+        }
+
+        main {
+            max-width: 1280px;
+            width: 100%;
+            margin: 0 auto;
+
+
+            .subTitle {
+                font-size: 3rem;
+
+                @media (width <=900px) {
+                    font-size: 2rem;
+                    text-align: center;
+                    margin: 2rem;
+                }
+            }
+        }
+    }
+}
